@@ -1,3 +1,29 @@
+. Flow Diagrams and Architecture
+
+  Architecture Diagram:
+
+  ```plaintext
+  +--------------------+       +--------------------+
+  |                    |       |                    |
+  |   Image Data       +------>+  Data Preprocessing|
+  |                    |       |  (Resizing, Augment)|
+  +--------+-----------+       +--------+-----------+
+           |                            |
+           v                            v
+  +--------v-----------+       +--------+-----------+
+  |                    |       |                    |
+  |  CNN Model         +------>+   Transfer Learning |
+  |  (e.g., VGG16)     |       |   (Fine-tuning)     |
+  +--------+-----------+       +--------+-----------+
+           |                            |
+           v                            v
+  +--------v-----------+       +--------+-----------+
+  |                    |       |                    |
+  |  Model Evaluation  |       |   Prediction       |
+  |  and Metrics       |       |   (Classify Images) |
+  +--------------------+       +--------------------+
+
+Flowchart
 +--------------------+
 |                    |
 |  Load Medical Data |
