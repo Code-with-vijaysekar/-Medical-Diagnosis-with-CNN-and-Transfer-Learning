@@ -23,3 +23,15 @@ This project focuses on developing a medical diagnosis system using Convolutiona
    git clone https://github.com/yourusername/Medical-Diagnosis-with-CNN-and-Transfer-Learning.git
    cd Medical-Diagnosis-with-CNN-and-Transfer-Learning
 
+2.Install Dependencies:
+pip install -r requirements.txt
+
+3.Prepare the Dataset:
+
+Place your medical images in the data directory.
+Ensure the dataset is organized into subdirectories for each class.
+
+4.Run the Jupyter Notebooks:
+
+Open notebooks/Model_Training.ipynb and execute the cells to train the model.
+
